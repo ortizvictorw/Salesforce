@@ -15,11 +15,11 @@ nivel, si son de nivel 1 pasan a nivel 2 y si son de nivel 2 pasarán a nivel 1.
 Actualizando también esta tabla para que se vean los resultados.
 
 
-********************************************## Sprint 1**************************************************
+## ******************************************** Sprint 1 **************************************************
 
 ### "PREPARANDO ENTORNO DE TRABAJO"
 
-___SFDX
+##SFDX
 
 * SALESFORCE
 * DEVELOPER

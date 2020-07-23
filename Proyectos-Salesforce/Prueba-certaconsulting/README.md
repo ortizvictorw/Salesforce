@@ -1,7 +1,7 @@
 # Proyecto Examen de certaconsulting
 
  ### Developer Ortiz Vitor
-<img src="https://avatars0.githubusercontent.com/u/57049891?s=460&u=3479716881907edaf1bbcfa5c0a6b2ac52c2817d&v=4" alt="100" width="100"/>
+    <img src="https://avatars0.githubusercontent.com/u/57049891?s=460&u=3479716881907edaf1bbcfa5c0a6b2ac52c2817d&v=4" alt="100" width="100"/>
 
 ### Objetivos
 
@@ -14,9 +14,9 @@ Por otro lado habrá un botón llamado "actualizar nivel de las cuentas" que lo 
 nivel, si son de nivel 1 pasan a nivel 2 y si son de nivel 2 pasarán a nivel 1.
 Actualizando también esta tabla para que se vean los resultados.
 
-__
+___
 
-## ******************************************** Sprint 1 **************************************************
+## ************************************** Sprint 1 **********************************************
 
 ### "PREPARANDO ENTORNO DE TRABAJO"
 
@@ -72,4 +72,4 @@ aparezca la paleta de comandos.
 Asegúrese de que la nueva secuencia comience con el símbolo >
 ** Ingrese SFDX: Create Project
 
-__
+___

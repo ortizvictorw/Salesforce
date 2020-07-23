@@ -72,9 +72,82 @@ aparezca la paleta de comandos.
 Asegúrese de que la nueva secuencia comience con el símbolo >
 ** Ingrese SFDX: Create Project
 
-##Resumen del sprint 1
-* Para crear una org de prueba:https://developer.salesforce.com/signup
+## Resumen del sprint 1
+* Para crear una org de prueba : https://developer.salesforce.com/signup
 * Integrar SalesForce con VisualStudio Code
 * Crear un proyecto 
 * Unirme a https://trailblazercommunitygroups.com/ (comunidad de salesforce)
 ___
+
+
+# Sprint 2 "INTRODUCCION AL LENGUAJE DE BACKEND "
+
+## Introduccion a Apex (Back-end)
+
+### Elaboracion de Glosario (ARCHIVO EN ELABORACION)
+
+### Variables
+	* Tipos
+		+boolean
+		+Integer	
+		+string
+
+
+
+### Colecciones
+
+* List "lista"
+Tiene un orden y puede contener elementos repetidos
+
+* Set "Conjunto"
+No puede contener elementos repetidos
+
+* Map"mapa"
+Es una estructura clave-valor
+___
+
+### Metodos
+* add 	=>agrega a una list o set
+* put 	=>inserta a un map
+* size 	=> contador de campos
+
+
+###  Comparadores
+
+* Variables Booleans
+	+ true
+	+ false
+	+ null
+* Operadores de comparacion 
+	+ <
+	+ <=
+	+ ==
+	+ != || <>
+	+ >
+	+ >=
+
+* Condicionales
+	+ if
+	+ else
+	+ Swich
+
+* Bucles
+
+	+ While --"mientras"
+	+ do while --"se ejecuta siempre una vez"
+
+
+* For
+___
+
+* Objetos
+___
+* Clases 
+___
+
+* Metodos 
+
+## Triggers
++ Before => antes que aocurra la accion
++ After => Luego que alla ocurrido
+

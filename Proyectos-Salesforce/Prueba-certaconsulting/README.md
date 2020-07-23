@@ -113,11 +113,11 @@ ___
 
 
 ###  Comparadores
-
 * Variables Booleans
 	+ true
 	+ false
 	+ null
+	
 * Operadores de comparacion 
 	+ < || >
 	+ <= || >=

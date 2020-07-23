@@ -119,12 +119,10 @@ ___
 	+ false
 	+ null
 * Operadores de comparacion 
-	+ <
-	+ <=
+	+ < || >
+	+ <= || >=
 	+ ==
 	+ != || <>
-	+ >
-	+ >=
 
 * Condicionales
 	+ if

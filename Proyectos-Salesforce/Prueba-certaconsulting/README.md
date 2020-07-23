@@ -1,6 +1,6 @@
 # Proyecto Examen de certaconsulting
 
- ### Developer Ortiz Vitor
+ ### Developer Ortiz Victor
    <img src="https://avatars0.githubusercontent.com/u/57049891?s=460&u=3479716881907edaf1bbcfa5c0a6b2ac52c2817d&v=4" alt="100" width="100"/>
 
 ### Objetivos
@@ -16,11 +16,11 @@ Actualizando también esta tabla para que se vean los resultados.
 
 ___
 
-## ************************************** Sprint 1 **********************************************
+##                                                    SPRINT 1 
 
 ### "PREPARANDO ENTORNO DE TRABAJO"
 
-##SFDX
+## SFDX
 
 * SALESFORCE
 * DEVELOPER
@@ -32,7 +32,7 @@ ___
 
 * instalar la Command Line Interface (CLI)
 
-    -Utilice la CLI de Salesforce para controlar todo el ciclo de vida de sus 
+    * Utilice la CLI de Salesforce para controlar todo el ciclo de vida de sus 
     aplicaciones de Salesforce. Con la CLI, podrá crear o conectar fácilmente 
     entornos de desarrollo y pruebas, además de sincronizar metadatos y códigos 
     entre sus organizaciones y un sistema de control de versiones.

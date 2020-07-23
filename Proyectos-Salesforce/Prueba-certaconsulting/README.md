@@ -87,10 +87,10 @@ ___
 ### Elaboracion de Glosario (ARCHIVO EN ELABORACION)
 
 ### Variables
-	* Tipos
-		+boolean
-		+Integer	
-		+string
+* Tipos
+	+ boolean
+	+ Integer	
+	+ string
 
 
 

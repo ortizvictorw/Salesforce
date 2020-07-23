@@ -72,4 +72,9 @@ aparezca la paleta de comandos.
 Asegúrese de que la nueva secuencia comience con el símbolo >
 ** Ingrese SFDX: Create Project
 
+##Resumen del sprint 1
+* Para crear una org de prueba:https://developer.salesforce.com/signup
+* Integrar SalesForce con VisualStudio Code
+* Crear un proyecto 
+* Unirme a https://trailblazercommunitygroups.com/ (comunidad de salesforce)
 ___

@@ -16,9 +16,7 @@ Actualizando también esta tabla para que se vean los resultados.
 
 ___
 
-##                                                    SPRINT 1 
-
-## "PREPARANDO ENTORNO DE TRABAJO"
+#                                                 SPRINT 1  "PREPARANDO ENTORNO DE TRABAJO"
 
 ### SFDX
 

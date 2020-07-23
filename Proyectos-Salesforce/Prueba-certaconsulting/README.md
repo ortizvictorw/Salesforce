@@ -3,7 +3,7 @@
  ### Developer Ortiz Victor
    <img src="https://avatars0.githubusercontent.com/u/57049891?s=460&u=3479716881907edaf1bbcfa5c0a6b2ac52c2817d&v=4" alt="100" width="100"/>
 
-### Objetivos
+### OBJETIVOS
 
 1. Salesforce posee una serie de objetos standar, uno de ellos es el objeto cuenta. La idea de este ejercicio es primero poder crear un campo llamado 
 nivel__c para el objeto cuenta con dos valores posibles: Nivel 1 y Nivel 2.
@@ -18,9 +18,9 @@ ___
 
 ##                                                    SPRINT 1 
 
-### "PREPARANDO ENTORNO DE TRABAJO"
+## "PREPARANDO ENTORNO DE TRABAJO"
 
-## SFDX
+### SFDX
 
 * SALESFORCE
 * DEVELOPER

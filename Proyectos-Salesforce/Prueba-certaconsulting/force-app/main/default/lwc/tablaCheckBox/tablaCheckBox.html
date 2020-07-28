@@ -1,0 +1,17 @@
+<template> 
+    <lightning-card>
+        <div style="height: 300px;">
+            <div class=title>
+                {nombre}
+            </div>
+            
+            <lightning-datatable
+                    key-field="id"
+                    data={datauser}
+                    columns={columns}
+                    onrowselection={setSelectedNivel}>
+            </lightning-datatable>
+        
+        </div>  
+    </lightning-card>  
+</template>

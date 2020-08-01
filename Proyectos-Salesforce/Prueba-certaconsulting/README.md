@@ -1,1 +1,1 @@
-![Proyecto](https://github.com/ortizvictorw/Salesforce/blob/master/Proyectos-Salesforce/Prueba-certaconsulting/Screenshot_2020-07-31%20joana%20pacheco%20Salesforce.png?raw=true){:height="700px" width="400px"}
+![Proyecto](https://github.com/ortizvictorw/Salesforce/blob/master/Proyectos-Salesforce/Prueba-certaconsulting/proyecto.png?raw=true){:height="700px" width="400px"}

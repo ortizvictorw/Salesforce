@@ -1,42 +1,31 @@
+
 <template>
     <lightning-card>
-   <!--      <lightning-button variant="brand" label="Actualizar" 
-        title="Primary action" onclick={handleClick} 
-        class="slds-m-left_x-small"></lightning-button> -->
        <lightning-button
         variant="brand" label="Actualizar" 
-        title="Primary action" onclick={handleClickCrear} 
+        title="Primary action" onclick={handleClickActualizar} 
         class="slds-m-left_x-small">
         </lightning-button> 
         <br/><br/><br/>
         <h1>NIVEL 1</h1>
         <div  style="height: 300px;">
-            <template if:true={accounts.data}>
                 <lightning-datatable
                         class="nivel1"
                         key-field="id"
-                        data={accounts.data}
-                        columns={columns}
-                        onrowselection={getSelectedName}>
+                        data={accountsNivel1}
+                        columns={columns}>
                 </lightning-datatable>
-            </template>
         </div>
        <br/><br/><br/>
         <h1>NIVEL 2</h1>
         <div  style="height: 300px;">
-            <template if:true={accounts2.data}>
                 <lightning-datatable
                         class="nivel2"
                         key-field="id"
-                        data={accounts2.data}
-                        columns={columns}
-                        onrowselection={getSelectedName}>
+                        data={accountsNivel2}
+                        columns={columns}>
                 </lightning-datatable>
-            </template>
-            <template if:true={errors}>
-                <p>{errors}</p>
-            </template>
         </div>
     </lightning-card> 
-    <c-imput-record ></c-imput-record>
+    <c-imput-record></c-imput-record>
 </template>

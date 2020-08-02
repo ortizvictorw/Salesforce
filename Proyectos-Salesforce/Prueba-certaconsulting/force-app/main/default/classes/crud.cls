@@ -8,7 +8,7 @@ public with sharing class crud {
     @AuraEnabled(cacheable = true)
     public static List<Account> getAccounts() {
       return [
-        SELECT ID, Name, Phone , Nivel__c 
+        SELECT ID, Name, Phone , Nivel__c, LastModifiedById 
         FROM Account
         WHERE Nivel__c IN ('1','2')
         WITH SECURITY_ENFORCED

@@ -6,6 +6,8 @@ import PHONE_FIELD from "@salesforce/schema/Account.Phone";
 import Nivel_FIELD from "@salesforce/schema/Account.Nivel__c"; 
 
 
+
+
 export default class ImputRecord extends LightningElement {
     @api registroid
     objectApiName = ACCOUNT_OBJECT;

@@ -2,6 +2,7 @@ import { LightningElement, wire,track } from "lwc";
 
 import NAME_FIELD from "@salesforce/schema/Account.Name";
 import PHONE_FIELD from "@salesforce/schema/Account.Phone";
+import LASTMODIFIEDBYID_FIELD from "@salesforce/schema/Account.LastModifiedById"; 
 import Nivel_FIELD from "@salesforce/schema/Account.Nivel__c";  
 import getAccounts from "@salesforce/apex/crud.getAccounts";
 import updateAccounts from "@salesforce/apex/crud.updateAccounts";
@@ -24,7 +25,12 @@ const COLUMNS = [
     label: "Nivel", 
     fieldName: Nivel_FIELD.fieldApiName, 
     type: "picklist"
-}  
+},
+{ 
+    label: "Ultima Modificacion", 
+    fieldName: LASTMODIFIEDBYID_FIELD.fieldApiName, 
+    type: "Search(user)"
+}    
 ]; 
 
 export default class contenedorDeTablas extends LightningElement {

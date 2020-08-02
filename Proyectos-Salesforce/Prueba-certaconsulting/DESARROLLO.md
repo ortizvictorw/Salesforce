@@ -98,7 +98,7 @@ ___
 
 * Dentro del JS del LWC==>tablaUsuarios.js:
 
-<import { LightningElement, wire,track } from "lwc";  
+`<import { LightningElement, wire,track } from "lwc";  
 import NAME_FIELD from "@salesforce/schema/Account.Name";  
 import PHONE_FIELD from "@salesforce/schema/Account.Phone";  
 import LASTMODIFIEDBYID_FIELD from "@salesforce/schema/Account.LastModifiedById";  
@@ -128,7 +128,7 @@ const COLUMNS = [
     fieldName: LASTMODIFIEDBYID_FIELD.fieldApiName, 
     type: "Search(user)"  
 }    
-]; 
+];`     
 
 export default class contenedorDeTablas extends LightningElement {  
     columns = COLUMNS;  

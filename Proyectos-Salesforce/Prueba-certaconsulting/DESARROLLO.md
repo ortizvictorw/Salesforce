@@ -98,12 +98,17 @@ Este es el componente data table de LWC
 
 * Dentro del JS del LWC==>tablaUsuarios.js:
 
-`import { LightningElement, wire,track } from "lwc";
+`<import { LightningElement, wire,track } from "lwc";  
 
-import NAME_FIELD from "@salesforce/schema/Account.Name";
-import PHONE_FIELD from "@salesforce/schema/Account.Phone";
-import LASTMODIFIEDBYID_FIELD from "@salesforce/schema/Account.LastModifiedById"; 
-import Nivel_FIELD from "@salesforce/schema/Account.Nivel__c";
+
+import NAME_FIELD from "@salesforce/schema/Account.Name";  
+
+import PHONE_FIELD from "@salesforce/schema/Account.Phone";  
+
+import LASTMODIFIEDBYID_FIELD from "@salesforce/schema/Account.LastModifiedById";  
+
+import Nivel_FIELD from "@salesforce/schema/Account.Nivel__c";  
+
 
 //Columnas a poblar
 

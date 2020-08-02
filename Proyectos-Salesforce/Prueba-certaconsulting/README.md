@@ -1,1 +1,2 @@
-![Proyecto](https://raw.githubusercontent.com/ortizvictorw/Salesforce/master/Proyectos-Salesforce/Prueba-certaconsulting/Final.png =100x20)
+
+<img src="https://raw.githubusercontent.com/ortizvictorw/Salesforce/master/Proyectos-Salesforce/Prueba-certaconsulting/Final.png" width="100" height="200" />

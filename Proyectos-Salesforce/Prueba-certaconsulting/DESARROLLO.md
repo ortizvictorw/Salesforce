@@ -85,4 +85,44 @@ ___
 
 * Debemos crear un campo custom llamado Nivel__c de tipo "lista de seleccion desde el gestor de objetos en el objeto Account el la opcion campos y relaciones.(el nombre del campo sirve para referenciar el campo desde js y el controlador)
 
+* Dentro del archivo tablasUsuarios.html :
+* insertar el componente database
+
+* Dentro de tablaUsuarios.js:
+* importar las columnas estandar y custom.
+* importar los decoradores wire,track.   
+* crear el evento que disparará la consulta de las cuentas " @wire(getAccounts, {})"
+
+### Funcionamiento:
+
+* Dentro del archivo contolador crud.cls, se encuentra un metodo que realiza la consulta a los servidores de salesforce, la consulta filta de todas la cuentas, solo aquellas las cuales tenas como nivel 1 o 2 y de las mismas solo trae su "ID, Name, Phone , Nivel__c, LastModifiedById ", y retorna una lista con todas las cuentas filtradas, para poblar la datatable.
+
+* Segun la data de la consulta la funcion dentro de js, implementa un condicional que dice lo siguiente:
+
+* Si la consulta devuelve listas de cuentas iterame esas cuentas y la que cuyo nivel sean 1 agregalas a la datatable Nivel 1 y las que su nivel sean 2 agregalas a la datatable Nivel 2;
+
+___
+
+# Sprint 3 "Capturar la row seleccionada"
+
+* se crea una clase dentro de cada tabla ---class="nivel1"/class="nive2"----, para referenciarlas de javscript, cuando el usuarios haga click en el checkbox que viene por defecto en las datatbles, sera capturado la informacion de dicha fila y almacenanda dentro de una variables, lo mismo para las dos columnas
+
+* Como esto posiblemente creara dos variables, antes de procesarlas se concateneran.
+
+
+# Sprint 4 "Crear el boton actualizar"
+
+* en elarchivo html crearemos un lightning-button con un evente onclick, que disparará la funcion de Actualizar dentro de js llamada "handleClickActualizar"
+
+* Dentro de la funcion handleClickActualizar, colocaremos las variables capturadas ya concaenadas.
+
+* Crearemos el metodo "updateAccounts" dentro del controlador crud.
+
+* Este metodo recibira cuentas a actualizar y realizara el update de cada una iterando en ellas y preguntandose que nivel poseen y cambiandolo al contrario
+
+* luego realiza el update y retorna el metodo de consulta de las cuentas.
+
+# Sprint 5 "Esperando a promesa para actualizar"
+
+* Luego de iterar las cuentas capturadas , pasarlas al metodo y modificarles su nivel , esa data vuelve como una promesa al javascript, el mismo toma esa data y con una condicion determina el destino de dichas cuentas actualizadas.
 

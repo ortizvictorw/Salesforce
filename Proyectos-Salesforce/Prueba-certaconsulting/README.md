@@ -25,4 +25,6 @@ ___
 * Dichas tablas se poblaran con cuentas creadas desde un ***lightning-record-edit-form*** 
 * Una vez seleccionado el campo de la cuenta la informacion se modificara al hacer click en el boton ***Actualizar***
 
+## Ver guia de desarrollo paso a paso en ***Desarrollo.md***
+
  

@@ -1,4 +1,4 @@
-# Proyecto de Tablas Dinámicas en Salesforce
+# Proyecto de Tablas Dinámicas en Salesforce con "lightning web component"
 ## Developer **Ortiz Victor**
 <img src="https://avatars0.githubusercontent.com/u/57049891?s=460&u=3479716881907edaf1bbcfa5c0a6b2ac52c2817d&v=4" width="100" height="100" />
 
@@ -16,3 +16,11 @@ Salesforce posee una serie de objetos standar, uno de ellos es el objeto cuenta.
 ___ 
 ## Imagen del Proyecto
 <img src="https://raw.githubusercontent.com/ortizvictorw/Salesforce/master/Proyectos-Salesforce/Prueba-certaconsulting/Final.png" width="600" height="800" />
+
+# Resumen
+* Se crea un campo personalizado llamado ***nivel__c-*** para el objeto cuenta de tipo lista de seleccion con valores 1 y 2.
+* Se utiliza ***lightning-datatable*** de lightning web component para generar las tablas de nivel 1 y nivel 2
+* Dichas tablas se poblaran con cuentas creadas desde un ***lightning-record-edit-form 
+* Una vez seleccionado el campo de la cuenta la informacion se modificara al hacer click en el boton ***Actualizar
+
+ 

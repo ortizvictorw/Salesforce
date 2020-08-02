@@ -128,7 +128,8 @@ const COLUMNS = [
     fieldName: LASTMODIFIEDBYID_FIELD.fieldApiName, 
     type: "Search(user)"  
 }    
-];`     
+];`    
+
 
 export default class contenedorDeTablas extends LightningElement {  
     columns = COLUMNS;  

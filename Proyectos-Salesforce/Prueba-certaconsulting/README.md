@@ -20,7 +20,7 @@ ___
 # Resumen
 * Se crea un campo personalizado llamado ***nivel__c-*** para el objeto cuenta de tipo lista de seleccion con valores 1 y 2.
 * Se utiliza ***lightning-datatable*** de lightning web component para generar las tablas de nivel 1 y nivel 2
-* Dichas tablas se poblaran con cuentas creadas desde un ***lightning-record-edit-form 
+* Dichas tablas se poblaran con cuentas creadas desde un *** lightning-record-edit-form 
 * Una vez seleccionado el campo de la cuenta la informacion se modificara al hacer click en el boton ***Actualizar
 
  

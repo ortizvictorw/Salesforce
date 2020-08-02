@@ -4,12 +4,11 @@
 
 ### Objetivos del Proyecto
 
-> Salesforce posee una serie de objetos standar, uno de ellos es el objeto cuenta. La idea de este ejercicio es primero:
+Salesforce posee una serie de objetos standar, uno de ellos es el objeto cuenta. La idea de este ejercicio es primero:
 
 * poder crear un campo llamado nivel__c para el objeto cuenta con dos valores posibles: Nivel 1 y Nivel 2.
 
-* poder generar una nueva página de lightning donde se muestran en dos tablas distintas las cuentas de nivel 1 y las cuentas de nivel 2.
-   * Estas tablas deben poseer 4 columnas, que serán, el nombre de la cuenta, el teléfono de la cuenta, la persona que lo modificó por última vez y una columna vacía donde                  aparecerá un checkbox por cada cuenta.
+* poder generar una nueva página de lightning donde se muestran en dos tablas distintas las cuentas de nivel 1 y las cuentas de nivel 2.Estas tablas deben poseer 4 columnas, que serán, el nombre de la cuenta, el teléfono de la cuenta, la persona que lo modificó por última vez y una columna vacía donde aparecerá un checkbox por cada cuenta.
 
 * habrá un botón llamado "actualizar nivel de las cuentas" que lo que hará será tomar las cuentas que tengan el checkbox tildado y cambiarles el nivel, si son de nivel 1 pasan a nivel 2 y si son de nivel 2 pasarán a nivel 1.
 

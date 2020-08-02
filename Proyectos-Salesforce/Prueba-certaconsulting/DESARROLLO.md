@@ -87,18 +87,18 @@ ___
 
 * dentro de HTML del LWC==>tablaUsuarios.html :
 
-` <lightning-datatable 
+  <lightning-datatable 
                         class="nivel1"  
                         key-field="id"  
                         data={data}  
                         columns={columns}>  
-  </lightning-datatable>  `
+  </lightning-datatable>  
 
-Este es el componente data table de LWC
+***Este es el componente data table de LWC
 
 * Dentro del JS del LWC==>tablaUsuarios.js:
 
-` <import { LightningElement, wire,track } from "lwc";  
+<import { LightningElement, wire,track } from "lwc";  
 import NAME_FIELD from "@salesforce/schema/Account.Name";  
 import PHONE_FIELD from "@salesforce/schema/Account.Phone";  
 import LASTMODIFIEDBYID_FIELD from "@salesforce/schema/Account.LastModifiedById";  
@@ -137,10 +137,11 @@ export default class contenedorDeTablas extends LightningElement {
     @track accountsNivel1=[];  
     @track accountsNivel2=[];  
 
-}  `
+} 
+
 * Dentro del JS del LWC==>tablasUsuarios.js-meta.xml:
 
-` <?xml version="1.0" encoding="UTF-8"?>  
+ <?xml version="1.0" encoding="UTF-8"?>  
 <LightningComponentBundle xmlns="http://soap.sforce.com/2006/04/metadata">  
    <apiVersion>45.0</apiVersion>  
    <isExposed>true</isExposed>  
@@ -149,16 +150,17 @@ export default class contenedorDeTablas extends LightningElement {
        <target>lightning__RecordPage</target>  
        <target>lightning__HomePage</target>  
    </targets>  
-</LightningComponentBundle>`  
-Te asegura que tu componente se visible dentro de la ORG agregando:
+</LightningComponentBundle>  
 
-`<isExposed>true</isExposed>  
+* Te asegura que tu componente se visible dentro de la ORG agregando:
+
+<isExposed>true</isExposed>  
    <targets>  
        <target>lightning__AppPage</target>  
        <target>lightning__RecordPage</target>  
        <target>lightning__HomePage</target>  
-   </targets> 
-   `
+</targets> 
+   
 
 
 

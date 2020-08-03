@@ -17,7 +17,7 @@ Salesforce posee una serie de objetos standar, uno de ellos es el objeto cuenta.
 * Actualizando también esta tabla para que se vean los resultados.
 ___ 
 ## Imagen del Proyecto
-<img src="https://raw.githubusercontent.com/ortizvictorw/Salesforce/master/Proyectos-Salesforce/Prueba-certaconsulting/Final-03082020.png" width="600" height="800" />
+<img src="https://raw.githubusercontent.com/ortizvictorw/Salesforce/master/Proyectos-Salesforce/Prueba-certaconsulting/Final-03082020.png" width="600" height="500" />
 
 # Resumen
 * Se crea un campo personalizado llamado ***nivel__c-*** para el objeto cuenta de tipo lista de seleccion con valores 1 y 2.

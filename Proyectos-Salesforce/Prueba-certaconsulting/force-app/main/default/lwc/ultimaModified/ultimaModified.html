@@ -1,0 +1,22 @@
+<template>
+    <br>
+   <lightning-card title="Ultimos Registros modificados">
+<h1>Nivel 1</h1>
+        <template for:each={modifiedregistro2} for:item="cuenta">
+            <lightning-card key={cuenta.Id}>
+            <ol >
+            <li  >Modificado por : {cuenta.LastModifiedBy.Name} <br> registro modificado : {cuenta.Name}</li>
+            </ol>
+            </lightning-card>
+        </template> 
+        <br><br>
+<h1>Nivel 2</h1>
+        <template for:each={modifiedregistro1} for:item="cuenta">
+            <lightning-card key={cuenta.Id}>
+            <ol >
+            <li  >Modificado por : {cuenta.LastModifiedBy.Name} <br> registro modificado : {cuenta.Name}</li>
+            </ol>
+            </lightning-card>
+        </template>
+</lightning-card> 
+</template>

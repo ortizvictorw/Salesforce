@@ -2,6 +2,7 @@ import { LightningElement, wire,track } from "lwc";
 
 import NAME_FIELD from "@salesforce/schema/Account.Name";
 import PHONE_FIELD from "@salesforce/schema/Account.Phone";
+import LastModifiedBy_FIELD from "@salesforce/schema/Account.LastModifiedBy.Name";  
 import LASTMODIFIEDBYID_FIELD from "@salesforce/schema/Account.LastModifiedById"; 
 import Nivel_FIELD from "@salesforce/schema/Account.Nivel__c";  
 import getAccounts from "@salesforce/apex/crud.getAccounts";
@@ -12,12 +13,12 @@ import updateAccounts from "@salesforce/apex/crud.updateAccounts";
 
 const COLUMNS = [
 {
-    label: "Account Name", 
+    label: "Nombre", 
     fieldName: NAME_FIELD.fieldApiName, 
     type: "text" 
 },
 {
-    label: "Phone",
+    label: "Telefono",
     fieldName: PHONE_FIELD.fieldApiName,
     type: "phone"
 },
@@ -25,12 +26,13 @@ const COLUMNS = [
     label: "Nivel", 
     fieldName: Nivel_FIELD.fieldApiName, 
     type: "picklist"
-},
-{ 
-    label: "Ultima Modificacion", 
+} ,
+ { 
+    label: 'Modificado por', 
     fieldName: LASTMODIFIEDBYID_FIELD.fieldApiName, 
-    type: "Search(user)"
-}    
+    type: 'Search'
+
+} 
 ]; 
 
 export default class contenedorDeTablas extends LightningElement {
@@ -39,6 +41,8 @@ export default class contenedorDeTablas extends LightningElement {
 //datos que poblaran las tablas nivel 1 y 2
     @track accountsNivel1=[];
     @track accountsNivel2=[];
+  
+    
 
 //consulat de cuentas 
 
@@ -58,12 +62,18 @@ export default class contenedorDeTablas extends LightningElement {
             for(let index in data){
                 console.log(data[index]);
                 console.log(data[index].Nivel__c);
+                console.log('LasModifi==>> ' + data[index].LastModifiedBy.Name);
+
                 if(data[index].Nivel__c == '1'){
                     this.accountsNivel1.push(data[index]);
+                    
                 }else if (data[index].Nivel__c == '2'){
                     this.accountsNivel2.push(data[index]);
+                    
+                    
                 }
             }
+           
 
             console.log('accountsNivel1',this.accountsNivel1);
             console.log('accountsNivel2',this.accountsNivel2);
@@ -73,13 +83,12 @@ export default class contenedorDeTablas extends LightningElement {
             console.error(JSON.stringify(error));
         }
     }
-
-
+  
 
 
     //boton que ejecuta el metodo de update en el controlador
 
-    handleClickActualizar() {
+    handleClickActualizar(event) {
         console.log('TEST');
 
 //captura la fila completa del registro con el checkbox seleccionado de la tabla Nivel 1
@@ -105,6 +114,8 @@ export default class contenedorDeTablas extends LightningElement {
 //array que contendran las cuentas modificadas           
             this.accountsNivel1=[];
             this.accountsNivel2=[];
+            
+
 
 //itera la data y se pregunta si la data en la posicion actual posee nivel 1 hacele push al array accountsNivel1
 //itera la data y se pregunta si la data en la posicion actual posee nivel 2 hacele push al array accountsNivel2
@@ -114,10 +125,14 @@ export default class contenedorDeTablas extends LightningElement {
                 console.log(data[index].Nivel__c);
                 if(data[index].Nivel__c == '1'){
                     this.accountsNivel1.push(data[index]);
+                    
+                
                 }else if (data[index].Nivel__c == '2'){
                     this.accountsNivel2.push(data[index]);
-                }
+                    
+                    }
             }
+            
 
             console.log('accountsNivel1',this.accountsNivel1);
             console.log('accountsNivel2',this.accountsNivel2);

@@ -1,31 +1,35 @@
-
 <template>
     <lightning-card>
        <lightning-button
         variant="brand" label="Actualizar" 
         title="Primary action" onclick={handleClickActualizar} 
+        
         class="slds-m-left_x-small">
         </lightning-button> 
         <br/><br/><br/>
         <h1>NIVEL 1</h1>
-        <div  style="height: 300px;">
+        <div  style="height: 100px;">
                 <lightning-datatable
                         class="nivel1"
                         key-field="id"
                         data={accountsNivel1}
                         columns={columns}>
-                </lightning-datatable>
+                    </lightning-datatable>                       
         </div>
+             
        <br/><br/><br/>
         <h1>NIVEL 2</h1>
-        <div  style="height: 300px;">
+        <div  style="height: 100px;">
                 <lightning-datatable
                         class="nivel2"
                         key-field="id"
                         data={accountsNivel2}
-                        columns={columns}>
+                        columns={columns}
+                        >
                 </lightning-datatable>
-        </div>
-    </lightning-card> 
-    <c-imput-record></c-imput-record>
+
+            </div>
+        </lightning-card> 
+
+    <c-ultima-modified modifiedregistro2={accountsNivel2} modifiedregistro1={accountsNivel1}></c-ultima-modified>
 </template>

@@ -8,12 +8,14 @@ import Nivel_FIELD from "@salesforce/schema/Account.Nivel__c";
 
 
 
+
 export default class ImputRecord extends LightningElement {
     @api registroid
     objectApiName = ACCOUNT_OBJECT;
     nameField = NAME_FIELD;
     Nivel__c = Nivel_FIELD;
     Phone = PHONE_FIELD;
+   
     
   
     handleReset() {
